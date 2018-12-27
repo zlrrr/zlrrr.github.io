@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[格式测试]]></title>
+    <url>%2F2018%2F12%2F27%2F%E6%A0%BC%E5%BC%8F%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[写作介绍1，字体介绍这是斜体 或 这也是斜体这是粗体这是加粗斜体这是删除线 2，分级标题一级标题二级标题三级标题四级标题五级标题六级标题3，超链接写法： 行内形式：我的博客参考形式：[我的博客][1]，有一个很好的平台-[简书][2][1]:https://xfbxfbxfb.github.io/[2]:http://www.jianshu.com/自动链接：我的博客地址https://xfbxfbxfb.github.io/ 4,列表无序列表：写法： 无序列表项1 无序列表项2 无序列表项3 有序列表：写法：1.有序列表项12.有序列表项23.有序列表项3 5，插入图片在 Hexo 中插入图片，首先需要将图片放在 source/img/ 文件夹下，然后如下方式进行插入： 6，表格 表头1 表头2 表头3 表头4 默认左对齐 左对齐 居中对其 右对齐 默认左对齐 左对齐 居中对其 右对齐 默认左对齐 左对齐 居中对其 右对齐]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[2018-12-25]]></title>
     <url>%2F2018%2F12%2F24%2F2018-12-25%2F</url>
     <content type="text"><![CDATA[今日事项：1.跟老师约谈关于毕业设计的项目问题2.做了一些关于毕设项目的调研研究]]></content>
