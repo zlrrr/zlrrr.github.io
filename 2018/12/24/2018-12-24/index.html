@@ -309,6 +309,17 @@
 
           
           
+             <span id="/2018/12/24/2018-12-24/" class="leancloud_visitors" data-flag-title="2018-12-24">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -340,7 +351,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-U2FsdGVkX18wY3bKVKwqGhkAibBs2vqHC3DC+zrVRzSM/LuiyrTRC7MSICaMi3NTyZXPPE2ry4zsvs5cRBcwfALeZovVF25OD9UCUWchyO2fYC4w9uQ7PDHtX1JePis8MEErnXEOCNOYYF6C7FqIOt1jZe+Kjzw2PD8zqejMy9gEDotQqVUurYMoftIeB7Tw3fuPsVPbYToYNgX6PZiojX9ezVvPrFSPOR/ZD0uAM9br3Qwge5qBdQbuKLQrCb0BSEBjwTGO7gJzbda7Ig5xU6gtkc/XXROW8zlYzFMpXg26dv+qauGwX2XtnxI+YrDYnoSYN3aEFy7jJ2Ky4EM6yIZHEqyMzUX6Znl1Jt8BRxEo9D4WLgJJpC6bdKU5BW+O
+U2FsdGVkX19S2orSTtw6uUrZrBiZStlWVdk5WLfevZ8JWTdGwmGjAHNYn8GiT8Fsjhud4g3n10EJTmjUyWblp2uOKehplerqgsiuTG+wT1nSs71uqVt1/JrE4KInTmgF51vdxSkdTn7qw8U9T+4CS0wxKCEczRA+58VhYVKNRVSvSIZvXMtmUfCQKUPse7b7SH0sH4Yp93iDu0d9VCq3w0ZLVS+BG7nUGQMraIDOnlrfQtG1VXvHDXoxQACRc9JZ5qtSEFCHWTiEtLfFqjr5Ah51Bq6cc3ewcgXRJgfXuUYpA+1rk9DxM+vecpGJxKlUaFaLCwClv0xvvhiDsSTD5I1mV1bRt7PAWOM35bXoCRxl3MfUTbD5o5xCOzM0Gh2f
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
@@ -670,6 +681,113 @@ U2FsdGVkX18wY3bKVKwqGhkAibBs2vqHC3DC+zrVRzSM/LuiyrTRC7MSICaMi3NTyZXPPE2ry4zsvs5c
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("skPsb0OIQ0v1TDBUtUkg3DIb-gzGzoHsz", "FDIn9yfCMDr70TwG9DFdH5OP");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
