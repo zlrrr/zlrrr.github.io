@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[基于spark的分布式机器学习平台：systemML（一）：简介]]></title>
     <url>%2F2019%2F02%2F13%2F%E5%9F%BA%E4%BA%8Espark%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%EF%BC%9AsystemML%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%AE%80%E4%BB%8B%2F</url>
-    <content type="text"><![CDATA[#part I SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。 任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。 这段时间一直在查看官方document学习，前期的主要工作是关于原理的文献翻译，后期会逐步熟悉平台的使用，进行相关API的开发和研究。]]></content>
+    <content type="text"><![CDATA[#part ISystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。这段时间一直在查看官方document学习，前期的主要工作是关于原理的文献翻译，后期会逐步熟悉平台的使用，进行相关API的开发和研究。]]></content>
   </entry>
   <entry>
     <title><![CDATA[2019-2-13日的一些感想]]></title>
