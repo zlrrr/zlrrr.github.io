@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Information is the primary productive force.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZLR&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。 任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。 这段时间一直在查看官方documen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于spark的分布式机器学习平台：systemML（一）：简介">
+<meta property="og:url" content="http://yoursite.com/2019/02/13/基于spark的分布式机器学习平台：systemML（一）：简介/index.html">
 <meta property="og:site_name" content="ZLR&#39;s Blog">
-<meta property="og:description" content="Information is the primary productive force.">
+<meta property="og:description" content="SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。 任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。 这段时间一直在查看官方documen">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-12T21:46:46.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZLR&#39;s Blog">
-<meta name="twitter:description" content="Information is the primary productive force.">
+<meta name="twitter:title" content="基于spark的分布式机器学习平台：systemML（一）：简介">
+<meta name="twitter:description" content="SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。 任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。 这段时间一直在查看官方documen">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/13/基于spark的分布式机器学习平台：systemML（一）：简介/">
 
 
 
 
 
-  <title>归档 | ZLR's Blog</title>
+  <title>基于spark的分布式机器学习平台：systemML（一）：简介 | ZLR's Blog</title>
   
 
 
@@ -143,7 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -247,357 +248,155 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/13/基于spark的分布式机器学习平台：systemML（一）：简介/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zlrrr">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZLR's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">基于spark的分布式机器学习平台：systemML（一）：简介</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-13T05:26:21+08:00">
+                2019-02-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 9 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/13/基于spark的分布式机器学习平台：systemML（一）：简介/" itemprop="url">
-              
-                <span itemprop="name">基于spark的分布式机器学习平台：systemML（一）：简介</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-13T05:26:21+08:00" content="2019-02-13">
-          02-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/13/2019-2-13日的一些感想/" itemprop="url">
-              
-                <span itemprop="name">2019-2-13日的一些感想</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-13T05:18:55+08:00" content="2019-02-13">
-          02-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
+            
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+          
+             <span id="/2019/02/13/基于spark的分布式机器学习平台：systemML（一）：简介/" class="leancloud_visitors" data-flag-title="基于spark的分布式机器学习平台：systemML（一）：简介">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/28/2018-12-28/" itemprop="url">
-              
-                <span itemprop="name">2018-12-28</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-28T02:21:12+08:00" content="2018-12-28">
-          12-28
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/28/2018-12-27/" itemprop="url">
-              
-                <span itemprop="name">2018-12-27</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-28T00:03:45+08:00" content="2018-12-28">
-          12-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/28/2018-12-26/" itemprop="url">
-              
-                <span itemprop="name">2018-12-26</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-28T00:00:32+08:00" content="2018-12-28">
-          12-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/27/万历十五年阅读笔记/" itemprop="url">
-              
-                <span itemprop="name">万历十五年阅读笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-27T23:59:50+08:00" content="2018-12-27">
-          12-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+        <pre><code>SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。
+由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。
+任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。
+这段时间一直在查看官方document学习，前期的主要工作是关于原理的文献翻译，后期会逐步熟悉平台的使用，进行相关API的开发和研究。
+</code></pre>
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/27/格式测试/" itemprop="url">
-              
-                <span itemprop="name">格式测试(转载）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-27T23:43:20+08:00" content="2018-12-27">
-          12-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/24/2018-12-25/" itemprop="url">
-              
-                <span itemprop="name">2018-12-25</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-24T21:52:24+08:00" content="2018-12-24">
-          12-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/24/2018-12-24/" itemprop="url">
-              
-                <span itemprop="name">2018-12-24</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-24T03:04:12+08:00" content="2018-12-24">
-          12-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/13/2019-2-13日的一些感想/" rel="next" title="2019-2-13日的一些感想">
+                <i class="fa fa-chevron-left"></i> 2019-2-13日的一些感想
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -605,6 +404,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -817,6 +620,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
