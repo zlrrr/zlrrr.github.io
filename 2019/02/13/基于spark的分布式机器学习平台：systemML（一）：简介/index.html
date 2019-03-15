@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="###systemml系列介绍SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对syste">
+<meta name="description" content="systemml系列介绍SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对systeml做">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于spark的分布式机器学习平台：systemML（一）：简介">
 <meta property="og:url" content="http://yoursite.com/2019/02/13/基于spark的分布式机器学习平台：systemML（一）：简介/index.html">
 <meta property="og:site_name" content="ZLR&#39;s Blog">
-<meta property="og:description" content="###systemml系列介绍SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对syste">
+<meta property="og:description" content="systemml系列介绍SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对systeml做">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-15T11:22:25.596Z">
+<meta property="og:updated_time" content="2019-03-15T11:23:24.934Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于spark的分布式机器学习平台：systemML（一）：简介">
-<meta name="twitter:description" content="###systemml系列介绍SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对syste">
+<meta name="twitter:description" content="systemml系列介绍SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对systeml做">
 
 
 
@@ -340,10 +340,10 @@
       
 
       
-        <p>###systemml系列介绍<br>SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。</p>
+        <h3 id="systemml系列介绍"><a href="#systemml系列介绍" class="headerlink" title="systemml系列介绍"></a>systemml系列介绍</h3><p>SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。</p>
 <p>由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。<br>本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对systeml做比较详细的剖析。</p>
 <p>由于本人水平有限，难免出现理解上的偏差和描述上的不当之处，欢迎斧正。</p>
-<p>###Systemml与Tensorflow<br><strong>TensorFlow的流行：</strong><br>tensorflow的流行得益于近几年火热的深度学习。随着计算能力的普遍上升和并行计算以及云计算的发展，深度神经网络的复杂量级参数训练和迭代过程对于现代计算机系统来说，已经不是一个很难的问题了。</p>
+<h3 id="Systemml与Tensorflow"><a href="#Systemml与Tensorflow" class="headerlink" title="Systemml与Tensorflow"></a>Systemml与Tensorflow</h3><p><strong>TensorFlow的流行：</strong><br>tensorflow的流行得益于近几年火热的深度学习。随着计算能力的普遍上升和并行计算以及云计算的发展，深度神经网络的复杂量级参数训练和迭代过程对于现代计算机系统来说，已经不是一个很难的问题了。</p>
 <p><strong>Systemml的优势：</strong><br>systemml结合了多种机器学习算法和机器学习算法，具有TensorFlow不具有的全面性，此外systemml的分布式集群计算能力是建立在Apache鼎鼎大名的spark生态系统中的，而spark是大数据领域最优秀的处理框架之一。</p>
 <p><strong>Systemml的劣势：</strong><br>TensorFlow作为深度学习领域的专精专家，比之于systemml优势较大。<br>systemml在国内几乎无中文社区，这也在一个方面限制了systemml的发展速度，因为一个开源项目决定其发展速度的很大一方面即是其使用者和开发者的数量级。</p>
 
@@ -434,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -486,6 +495,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#systemml系列介绍"><span class="nav-number">1.</span> <span class="nav-text">systemml系列介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Systemml与Tensorflow"><span class="nav-number">2.</span> <span class="nav-text">Systemml与Tensorflow</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

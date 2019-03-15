@@ -344,9 +344,8 @@
       
         
           
-            <p>###Systemml安装指南（基于pyspark）</p>
-<p>####systemml官方信息<br>systemml[项目官网]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[官方文档]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[github]: (<a href="https://github.com/apache/systemml" target="_blank" rel="noopener">https://github.com/apache/systemml</a>)</p>
-<p>####环境配置和成功安装所需版本信息<br>以下配置是安装在笔者电脑上的环境。<br>    &gt;<strong>A.支持基本语法和算法的环境：</strong><br>    systemml version == 1.2.0   +  任意python3.5+或2.7+<br>    <strong>B.支持深度学习算法的环境：</strong><br>    A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错）<br>    <strong>C.支持GPU运行的环境：</strong><br>    A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5)<br>    (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持)</p>
+            <h3 id="Systemml安装指南（基于pyspark）"><a href="#Systemml安装指南（基于pyspark）" class="headerlink" title="Systemml安装指南（基于pyspark）"></a>Systemml安装指南（基于pyspark）</h3><h4 id="systemml官方信息"><a href="#systemml官方信息" class="headerlink" title="systemml官方信息"></a>systemml官方信息</h4><p>systemml[项目官网]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[官方文档]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[github]: (<a href="https://github.com/apache/systemml" target="_blank" rel="noopener">https://github.com/apache/systemml</a>)</p>
+<h4 id="环境配置和成功安装所需版本信息"><a href="#环境配置和成功安装所需版本信息" class="headerlink" title="环境配置和成功安装所需版本信息"></a>环境配置和成功安装所需版本信息</h4><p>以下配置是安装在笔者电脑上的环境。<br>    &gt;<strong>A.支持基本语法和算法的环境：</strong><br>    systemml version == 1.2.0   +  任意python3.5+或2.7+<br>    <strong>B.支持深度学习算法的环境：</strong><br>    A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错）<br>    <strong>C.支持GPU运行的环境：</strong><br>    A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5)<br>    (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持)</p>
 <p>以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。</p>
 
           
@@ -478,10 +477,10 @@
       
         
           
-            <p>###systemml系列介绍<br>SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。</p>
+            <h3 id="systemml系列介绍"><a href="#systemml系列介绍" class="headerlink" title="systemml系列介绍"></a>systemml系列介绍</h3><p>SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。</p>
 <p>由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。<br>本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对systeml做比较详细的剖析。</p>
 <p>由于本人水平有限，难免出现理解上的偏差和描述上的不当之处，欢迎斧正。</p>
-<p>###Systemml与Tensorflow<br><strong>TensorFlow的流行：</strong><br>tensorflow的流行得益于近几年火热的深度学习。随着计算能力的普遍上升和并行计算以及云计算的发展，深度神经网络的复杂量级参数训练和迭代过程对于现代计算机系统来说，已经不是一个很难的问题了。</p>
+<h3 id="Systemml与Tensorflow"><a href="#Systemml与Tensorflow" class="headerlink" title="Systemml与Tensorflow"></a>Systemml与Tensorflow</h3><p><strong>TensorFlow的流行：</strong><br>tensorflow的流行得益于近几年火热的深度学习。随着计算能力的普遍上升和并行计算以及云计算的发展，深度神经网络的复杂量级参数训练和迭代过程对于现代计算机系统来说，已经不是一个很难的问题了。</p>
 <p><strong>Systemml的优势：</strong><br>systemml结合了多种机器学习算法和机器学习算法，具有TensorFlow不具有的全面性，此外systemml的分布式集群计算能力是建立在Apache鼎鼎大名的spark生态系统中的，而spark是大数据领域最优秀的处理框架之一。</p>
 <p><strong>Systemml的劣势：</strong><br>TensorFlow作为深度学习领域的专精专家，比之于systemml优势较大。<br>systemml在国内几乎无中文社区，这也在一个方面限制了systemml的发展速度，因为一个开源项目决定其发展速度的很大一方面即是其使用者和开发者的数量级。</p>
 
