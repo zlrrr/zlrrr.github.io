@@ -305,6 +305,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/28/2018-12-26/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/28/2018-12-26/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -418,6 +428,9 @@ U2FsdGVkX19oj1Y5WnK1ZbJl3NoTRAeNy2kzK6aAV2g4GVST9r7HdniUsMJgh/uDckQXv92QEVLWLcDo
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -675,6 +688,28 @@ U2FsdGVkX19oj1Y5WnK1ZbJl3NoTRAeNy2kzK6aAV2g4GVST9r7HdniUsMJgh/uDckQXv92QEVLWLcDo
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'skPsb0OIQ0v1TDBUtUkg3DIb-gzGzoHsz',
+        appKey: 'FDIn9yfCMDr70TwG9DFdH5OP',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
