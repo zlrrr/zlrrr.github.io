@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[基于spark的分布式机器学习平台：systemML（二）：安装部署指南]]></title>
+    <url>%2F2019%2F03%2F15%2F%E5%9F%BA%E4%BA%8Espark%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%EF%BC%9AsystemML%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[###Systemml安装指南（基于pyspark） ####systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) ####环境配置和成功安装所需版本信息以下配置是安装在笔者电脑上的环境。 &gt;A.支持基本语法和算法的环境： systemml version == 1.2.0 + 任意python3.5+或2.7+ B.支持深度学习算法的环境： A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错） C.支持GPU运行的环境： A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5) (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持) 以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[基于spark的分布式机器学习平台：systemML（一）：简介]]></title>
     <url>%2F2019%2F02%2F13%2F%E5%9F%BA%E4%BA%8Espark%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%EF%BC%9AsystemML%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%AE%80%E4%BB%8B%2F</url>
     <content type="text"><![CDATA[part ISystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。由于一些原因，SystemML在机器学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。任何领域都需要敢于第一个吃螃蟹的人。借着毕设的这个契机，我也是第一次接触到SystemML。这段时间一直在查看官方document学习，前期的主要工作是关于原理的文献翻译，后期会逐步熟悉平台的使用，进行相关API的开发和研究。 part Ⅱ待续更新…]]></content>
@@ -13,22 +18,22 @@
   <entry>
     <title><![CDATA[2018-12-28]]></title>
     <url>%2F2018%2F12%2F28%2F2018-12-28%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX18uSoo4RpijFP21TwmWR45b1ETtPvbl/2bs9dr8SGaPq+HkbonkXQDrkGGRMnoITxcecgISNORomGbl7yG7T/2aenPRdi2gdALiKxit4UTtKOjhB09u5ch8e4WxRSvo0QKZYUDA/NB0cmL3GnzemUg+6fPITCeipd93hXCaiNBl2LRAkQA3o8fIslR0krOdhYJmUlm+6CAhZZgz199MdmQmQSH9Db2UjkDVDkbG3VYBquj2ZXoa9mauNFhqS8+uBPR3uRYEvucIsYjV1iOb+yrGrwPMEWX1O9DijSMc0hKBLHB9qVhj9wmsyT7o+DWDy/7nmDDj/hrIxQU9JeY8Yrm58EEs11RVLNHV9FLtiIsrfjGRYWGKREVmm9qNtQ7wmWyCfTnvwBFo7OL+4qUg4SECLaD+xhLSSW7Ba1XcV9ls6DXo0n6XkC3rMa6xEGHiMCms08SqC0mTinl7F7X/4XUEUKIbMb2StK31JrzMW1hJVSehuwJ7sC9XH1CMmI+8I4kpP3+XB/0jIONLixH2GkPQCFyHUKLf3L0667W5J3F0wGMGIJTa2KtA39SIXpwTiUZhFt2SmQlSqOXG7YgGdnOMd93iA+2of7NP4PU+qT+nZTYPU2o5WUq2LcrknPgSTDtlmgsr/+z2YoO4DTzWQKmvwq27t8Sa4OXMjRYmTJAnrCf/hTUvy1Jk]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+5tHXcq2STq6+gc77RZdoskcMh/wFCqEr68UyZrxCDkdr2PX0nO5SZI5ydjjf+bA/b/N7Jt9USzDJjBvzRVY/4V7Xeu7LmdZIpX8yEIFl4UBiW/H8MxJXsbiYl0mO2lv5g1v2mgbUBkIDtQM8OG14dQRBYW1TgREKcoVCU2hLe/NuQ34DeS1CfsYtSzMO1dEbvt/HBu2bS16xCwoAyj3SEvaeV7n2Tqn0d7RNLdOe1tbkcho3ypOoVtL1gF9/RPHDnxt1dP3LGln7T1wXkcGvrnc9zXyt/Krv2d7/vtcI/4N2jy1cv+Q+HuGvNDrpk7Bctqa6zUEXIrn4Ct/NgOJbLUubVF/9KgdBK+KEjZtOEkWVT7B5HM2hlKVCI6fMps/+hF1RvZBNE6FCP4hKNVnIytV13Ips8+8A/TayO9HZYkJckrjmI5+NpS2nNXpen8nX84Vy9a2lClngoCO0IlPQrVfPnKvVtEiY3AofOv21l13fBDntLAGn23R7pisUrw2fh7Zc0JOPqy6EdOqTSagitozvb9iZy1ppK2HcWYrQyo0J6MJha/1ATC9vyOjYXex8179/RGiRnC+ANnMYEiaXk9q9KBzaEjXbyRyUPZTGciXjV48ukA33dOEFbZvc32KIr8LANGN1Z9hRnUVW3URQXrXn1K3pTJijeBlKok9r7/XsH4oKb7L59]]></content>
   </entry>
   <entry>
     <title><![CDATA[2018-12-27]]></title>
     <url>%2F2018%2F12%2F28%2F2018-12-27%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1/Pl2V7m4Bvow+PSoagEqpe/WBTSXIth2OQD4Ez981mMQy00a3JqoMlOsgw26eiAKcPbVrH/18bHkVxWLrHNofJw7HruxDRjDeV6/6zQlX334bkx05HetQgV8RFOPIgPWlmLZqEUUSKdyg6JPruK00fcqdRk17BUDQIuUnbcJoCA242866qRF1ZG0gGwjETwxZPnXFy/jyCJ3pMn7RswMxnHlvdynNlUiWlcrebOAZlnBtdusQSW55WOE0a6aqs5ikaRoMqio8kGzsrH6vIf1sejpjt4Q6h8fqa6IaiDXesQfhpfiWCEZ3GyZ+cea3hiUNUiiZvHiUrcmsWokj8Tzvg9k14z8MYcjZzle/KR7Y7+9eiW3FJ/0ZOOayYN76MBSDkaN7aJ0I3RbWdUNsB/SHU9qn1EFri1ic=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX19kj9md0STjW8qzZugbH6mokJYGvBLXx7mL/N/TGG26pwzxXESzzfirsYpk7lVeyvHEpWaYnXslf6xsQ9OsQLZGtQktyLg8nKtxqU/C4aDwryL9ok/zGO6SVCZ5K+4E/9VChFxDweYX7qZvAvV/MDXXYzR3ZDqCJBInIW/306a52la+SaRWcuZVV+knAG12zXkynw+oEFVWmNU1EMuhWFDaRo4i3Vag2zLRC69IbtYl0SBJ3yqj6yaEr8eook5CnazRAPEqe+AlNW1QSWQxSPqXkGDjSDyt0H9i8rQfJzieN9GXlSTtJBGhitVkwMYmNx6YVGTnM3ensI2zKFc8iSIlqvpI/UDXwMK5bxGHr8UquNe9fgJ0rNwA5kPMpiAmG3G9J8HbZdfDQIzlRA1+YzuPKVMJLILvDQs=]]></content>
   </entry>
   <entry>
     <title><![CDATA[2018-12-26]]></title>
     <url>%2F2018%2F12%2F28%2F2018-12-26%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+U19qyxCPAK5JuvwqaMkiPP0x7wKmSsf3rZysCYFOBpbsR3IHRZB8ekiMxgsYlAcoudxii4CbwtB3Xp6zISevUTR4Nx+3SRVLmoBO+OQI7eTQeFgMne5q5fPBZ2Bjy0OZp4msNcNylXQCqDuzZdU+pReL1Zfz3bHkcnbYoF70ijnEF4H2OuN7PGTi5zA9mBTREltZljkUFI4gbad5BPWoeqoNnVKG0KRu/1I3W03K/O6qnIBRGjKRE/WiUFFducPYUADZaXfbRl0pAlT+2rw9GoE7FbO6bNlC5qH1GksZzS8VD27Ij1RLWZLd1znu4XMHQlUdrG2ZeezD8iFsB6hTa87ep3eQfsWsrEJpEQp5bYQ6FBAOE1aPzvFZvS7S7PVpzrNXBxwUiy1yY+5FE9uVhLCnXTnEcbGbKsIs3D3p61quCD9oR/1heIWzH8NhfL1BhFX/AEc6rgTmi1WJhjSzW/QK78il1a/Y=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX19oj1Y5WnK1ZbJl3NoTRAeNy2kzK6aAV2g4GVST9r7HdniUsMJgh/uDckQXv92QEVLWLcDo3b7ZglfbNf8TO5f+nxJuG57y76kWNSPBf04MA9YOSyi3Ob81r0Bh4teXmhveM4B5IuwcpbpNdU4wvOuOheYSxvelXfzkWzVUgzwSa/5bSvuFlSt+dAA1YjU2qPBuGusIVtFmaRgsxfQjiy5oP3TR42TPgWIjokE6hgnzngNxByhG/VCM+RNt9DuFw//JKuu6JfLs5ovbQpb0MLkLpUC4gcqTvXw52bkbqrW4phWn0NYumJAsFGsuoHzv+SQS3I1hTwDDV2vQvHj+n3oAGDrZGIp/9TjhNvplk1gnoX7DE8Tcpde/WhqbMREM9Cv8Y7I0yaaYRMPpcVwKF+lI19E8yaotl9N9Ay2imPncYHmAc7fMwdYnvldqO0quOLGO5ev83yKgwTOddgIcSqBkSNFWnfxN6Vo=]]></content>
   </entry>
   <entry>
     <title><![CDATA[万历十五年阅读笔记]]></title>
     <url>%2F2018%2F12%2F27%2F%E4%B8%87%E5%8E%86%E5%8D%81%E4%BA%94%E5%B9%B4%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX185F5+cZvWRCcH9HPIgmYAi6puZXYlVK95gzRsRgOclU3LBQ7BmsHeq8COBUI2HMuZvYlaDFKDcE9Dd7mAlGb4kI8rQI0bpgwSrNucqtBh3+N5uqbenpOGHQizfjhosJePP2PECUgQWFKY8/sxeLlGi/1qR31ezJH0hrRjl1xpX5mNFA4sp76xQYBvAweRpviqzULdbZRo+LA+stFuObvEFGw9G60Zndy+6LDxOi2AAP2dRHve1I0n0u2/RMBVpedqHR9NHEitEPByXtln+4p8i2VgO/syCQPc=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+yrgPYxDuBGjhU/FEHCEbppJApmHt3tUC+reWNaHx4djK1ePOs8Y2WYNiArJvZqnRh1CSqb9aKlpr3bkW7nIeWdJn9L9o4Sx5YJF2K5XhuxgoYZdPeEXbYJQ3qF359L2vwqeYWIje5TYfYsDMLXH2EbioDrtpXAi3A4Wk/zD71+UIiQXQhUhaA/lAydv1RvX5AFPwyFBtBuKoFgeCaiB5fUurzmjH3EvkL4rB8Z1hD/fk5R9jJ2NldWYda1lWeANy4kAIGSGtucquqxGhSGnkvUHgs0PyDOWM=]]></content>
       <tags>
         <tag>hide</tag>
       </tags>
@@ -41,11 +46,11 @@
   <entry>
     <title><![CDATA[2018-12-25]]></title>
     <url>%2F2018%2F12%2F24%2F2018-12-25%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX180lB7DZsbDnretbKSqbj6yzPKC9FlKgsDmwCOvSUaWYYT3Av0RW+4r1DgWp0OauIYJsG4Sf94nRAiXBY/OwMbn5Hmgi0Rm8UgzsjX4bIUtitHCDTjPXhjBq+QUwZTV3rNUn9sB4u7K8Bko+fDDPkFPp6pP2HR3UYgOVrAJIoU2TXzLZqtItT/O7B3aXvIKl+S8a+J7C9Estb6WYXCyeNuMRrE7yFZ9daBaQqiGLewfVvnI88Bh2/rYPT7xGIoJRrRNPs0E/Ug2kvRY77XLteS2RsaEdztzPQaxmOXh+IW1Q6K4vps/AyFg5Dsq+TNPOV1zkC4jq9nCTmOvznkys3MN7QoFz7Il23aXRSqTi9BQJ8j4MbXa1JA77hy37fW3CLKXCwGOgxqk+TfsBNsDSbtzu4Rj5K+RZ+0ji3ZK+65Pk7elWvCH7JKz1FefgLzqq8tZvwuXP0wNS4y07O2bEDg69qVvVwpO3Zw=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+ihWIEsfoKXVAm2ROsBT7Qfw7i1VxeK+FtNCB+EtPOP8FbxTDFTABSYiJWY5L4AXah5A9M/FUg9XyWwAptQJtUFceFt8ggqFQc/okHZ3WY+2IDtnKvOCzq2R4+tFDQ8fFhj2d6twEY+NudNidvkXdp2qfPHg/9s3L4Ep3pkz3O84f08ZXTyfc95P6DnfDbvpHQ8ph4mxwEYIhLYMSfqySGTbyOEZZ+B08VXubKVXrRwXjxGPEMrduq4WjwXJY8+3G9u0mTHU36fUPjtD2A4QRxYD9uDT2Hw7rwUEsFNDoGQRRGNs3DQiAPjr4udev8Z6WVh2rQcc6pRFK3MmtqDjZxhxr/MX0kRL0OzxL6KtAC9WkJ87dRXdhrRhzpURxKcl4MJyxv4K6ZNerfCuwx5BxRawGzCXWPBSiR7GJ6WVp1myLnZfKmHy6qc3uqECoDDZcdIDZZLCkRaAYqEnYDp2QF20EbAn/gAYQ=]]></content>
   </entry>
   <entry>
     <title><![CDATA[2018-12-24]]></title>
     <url>%2F2018%2F12%2F24%2F2018-12-24%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX18/Wug9MVYmkBkhWyjzsq22+kOTi2EywAHBB3ZSK+3kBDvBVqrT5OC7AouHecqhqJbtHc8L3ricd5Mjw10t460/oe3fAjnl0T4TNjxtJHBDMklYcbQTgAglk1UKPXO9CPIeovr2hk5BL7QoDSkKd4ov8UsbHPqdcWzeN0VRpi9aQlrL9jYrVB/vNnHhUdr+PzQqo4lC2mfcVq7aLW3vgyI4orAvUS8G46tn299/0zcx783OBn+aA6wxPneSlgubLoVqOG4Kcs9d4AG46lo3IuDtgyGKTpyY9HSpS6wijJwPHwvnIIwCK32UsgVKWTj8yirg40VMMAs9DAmlJ9app5pHiQMpicHVyJg0/anVG8ZqML17o2RYtteb]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+StiROmCmv11O81/DFIcgYTgNJNAJpFvw4ctNmvwdG93qMgpHd7h91gu4RCCY3Fa9BLo+ezOHx3UKZT2zzdKjc7gHRQBkqYfMFXiYzX3QHkYiXrhr3jv/bg14qFE43rJ92R0FMQJ3OedRsat7HX1KvMHNXw2oNQ0NcCV4vsWZkwgd6GwXENFy7RuMikKSrTzdNC4T3iCnBOxxhry3bVWfdLq9EeI3E2wNo6a+XjE0Ah8odoc9gcD5HBc7tXRYCFbkq7vYxTWlK/ZUgPDSanQTsVoDzkZ5FT8/1qrJYlEiqMgbT053wYKgqDsXrQ/WJX5ka/MfFIzSrGPR+MLRmblfbLNvXD6xd4HA9s4VZTd5izFJu/dobfDQJ]]></content>
   </entry>
 </search>
