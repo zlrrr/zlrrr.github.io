@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Systemml安装指南（基于pyspark）">
+<meta name="description" content="Systemml安装指南（基于pyspark编程）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于spark的分布式机器学习平台：systemML（二）：安装部署指南">
-<meta property="og:url" content="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/index.html">
 <meta property="og:site_name" content="ZLR&#39;s Blog">
-<meta property="og:description" content="Systemml安装指南（基于pyspark）">
+<meta property="og:description" content="Systemml安装指南（基于pyspark编程）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-15T11:35:01.580Z">
+<meta property="og:updated_time" content="2019-03-15T11:45:17.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于spark的分布式机器学习平台：systemML（二）：安装部署指南">
-<meta name="twitter:description" content="Systemml安装指南（基于pyspark）">
+<meta name="twitter:description" content="Systemml安装指南（基于pyspark编程）">
 
 
 
@@ -119,7 +119,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/">
 
 
 
@@ -262,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zlrrr">
@@ -310,8 +310,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/" itemprop="commentCount"></span>
+                <a href="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -319,7 +319,7 @@
 
           
           
-             <span id="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/" class="leancloud_visitors" data-flag-title="基于spark的分布式机器学习平台：systemML（二）：安装部署指南">
+             <span id="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/" class="leancloud_visitors" data-flag-title="基于spark的分布式机器学习平台：systemML（二）：安装部署指南">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -350,7 +350,7 @@
       
 
       
-        <h3 id="Systemml安装指南（基于pyspark）"><a href="#Systemml安装指南（基于pyspark）" class="headerlink" title="Systemml安装指南（基于pyspark）"></a>Systemml安装指南（基于pyspark）</h3><a id="more"></a>
+        <h3 id="Systemml安装指南（基于pyspark编程）"><a href="#Systemml安装指南（基于pyspark编程）" class="headerlink" title="Systemml安装指南（基于pyspark编程）"></a>Systemml安装指南（基于pyspark编程）</h3><a id="more"></a>
 <h4 id="systemml官方信息"><a href="#systemml官方信息" class="headerlink" title="systemml官方信息"></a>systemml官方信息</h4><p>systemml[项目官网]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[官方文档]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[github]: (<a href="https://github.com/apache/systemml" target="_blank" rel="noopener">https://github.com/apache/systemml</a>)</p>
 <h4 id="环境配置和成功安装所需版本信息"><a href="#环境配置和成功安装所需版本信息" class="headerlink" title="环境配置和成功安装所需版本信息"></a>环境配置和成功安装所需版本信息</h4><p>以下配置是安装在笔者电脑上的环境。<br>    &gt;<strong>A.支持基本语法和算法的环境：</strong><br>    systemml version == 1.2.0   +  任意python3.5+或2.7+<br>    <strong>B.支持深度学习算法的环境：</strong><br>    A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错）<br>    <strong>C.支持GPU运行的环境：</strong><br>    A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5)<br>    (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持)</p>
 <p>以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。</p>
@@ -512,7 +512,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Systemml安装指南（基于pyspark）"><span class="nav-number">1.</span> <span class="nav-text">Systemml安装指南（基于pyspark）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#systemml官方信息"><span class="nav-number">1.1.</span> <span class="nav-text">systemml官方信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#环境配置和成功安装所需版本信息"><span class="nav-number">1.2.</span> <span class="nav-text">环境配置和成功安装所需版本信息</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Systemml安装指南（基于pyspark编程）"><span class="nav-number">1.</span> <span class="nav-text">Systemml安装指南（基于pyspark编程）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#systemml官方信息"><span class="nav-number">1.1.</span> <span class="nav-text">systemml官方信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#环境配置和成功安装所需版本信息"><span class="nav-number">1.2.</span> <span class="nav-text">环境配置和成功安装所需版本信息</span></a></li></ol></li></ol></div>
             
 
           </div>
