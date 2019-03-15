@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Systemml安装指南（基于pyspark）systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) 环境配置和成功安装所需版本信息以下配置是">
+<meta name="description" content="Systemml安装指南（基于pyspark）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于spark的分布式机器学习平台：systemML（二）：安装部署指南">
 <meta property="og:url" content="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：安装部署指南/index.html">
 <meta property="og:site_name" content="ZLR&#39;s Blog">
-<meta property="og:description" content="Systemml安装指南（基于pyspark）systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) 环境配置和成功安装所需版本信息以下配置是">
+<meta property="og:description" content="Systemml安装指南（基于pyspark）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-15T11:23:33.370Z">
+<meta property="og:updated_time" content="2019-03-15T11:35:01.580Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于spark的分布式机器学习平台：systemML（二）：安装部署指南">
-<meta name="twitter:description" content="Systemml安装指南（基于pyspark）systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) 环境配置和成功安装所需版本信息以下配置是">
+<meta name="twitter:description" content="Systemml安装指南（基于pyspark）">
 
 
 
@@ -350,7 +350,8 @@
       
 
       
-        <h3 id="Systemml安装指南（基于pyspark）"><a href="#Systemml安装指南（基于pyspark）" class="headerlink" title="Systemml安装指南（基于pyspark）"></a>Systemml安装指南（基于pyspark）</h3><h4 id="systemml官方信息"><a href="#systemml官方信息" class="headerlink" title="systemml官方信息"></a>systemml官方信息</h4><p>systemml[项目官网]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[官方文档]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[github]: (<a href="https://github.com/apache/systemml" target="_blank" rel="noopener">https://github.com/apache/systemml</a>)</p>
+        <h3 id="Systemml安装指南（基于pyspark）"><a href="#Systemml安装指南（基于pyspark）" class="headerlink" title="Systemml安装指南（基于pyspark）"></a>Systemml安装指南（基于pyspark）</h3><a id="more"></a>
+<h4 id="systemml官方信息"><a href="#systemml官方信息" class="headerlink" title="systemml官方信息"></a>systemml官方信息</h4><p>systemml[项目官网]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[官方文档]: (<a href="http://systemml.apache.org/" target="_blank" rel="noopener">http://systemml.apache.org/</a>)<br>systemml[github]: (<a href="https://github.com/apache/systemml" target="_blank" rel="noopener">https://github.com/apache/systemml</a>)</p>
 <h4 id="环境配置和成功安装所需版本信息"><a href="#环境配置和成功安装所需版本信息" class="headerlink" title="环境配置和成功安装所需版本信息"></a>环境配置和成功安装所需版本信息</h4><p>以下配置是安装在笔者电脑上的环境。<br>    &gt;<strong>A.支持基本语法和算法的环境：</strong><br>    systemml version == 1.2.0   +  任意python3.5+或2.7+<br>    <strong>B.支持深度学习算法的环境：</strong><br>    A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错）<br>    <strong>C.支持GPU运行的环境：</strong><br>    A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5)<br>    (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持)</p>
 <p>以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。</p>
 

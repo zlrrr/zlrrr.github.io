@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[基于spark的分布式机器学习平台：systemML（二）：安装部署指南]]></title>
     <url>%2F2019%2F03%2F15%2F%E5%9F%BA%E4%BA%8Espark%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%EF%BC%9AsystemML%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[Systemml安装指南（基于pyspark）systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) 环境配置和成功安装所需版本信息以下配置是安装在笔者电脑上的环境。 &gt;A.支持基本语法和算法的环境： systemml version == 1.2.0 + 任意python3.5+或2.7+ B.支持深度学习算法的环境： A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错） C.支持GPU运行的环境： A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5) (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持) 以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。]]></content>
+    <content type="text"><![CDATA[Systemml安装指南（基于pyspark） systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) 环境配置和成功安装所需版本信息以下配置是安装在笔者电脑上的环境。 &gt;A.支持基本语法和算法的环境： systemml version == 1.2.0 + 任意python3.5+或2.7+ B.支持深度学习算法的环境： A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错） C.支持GPU运行的环境： A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5) (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持) 以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。]]></content>
   </entry>
   <entry>
     <title><![CDATA[基于spark的分布式机器学习平台：systemML（一）：简介]]></title>
