@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[基于spark的分布式机器学习平台：systemML（二）：安装部署]]></title>
+    <title><![CDATA[基于spark的分布式机器学习平台--systemML（二）：安装部署]]></title>
     <url>%2F2019%2F03%2F15%2F%E5%9F%BA%E4%BA%8Espark%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%EF%BC%9AsystemML%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97%2F</url>
     <content type="text"><![CDATA[Systemml安装指南（基于pyspark编程） systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml) 环境配置和成功安装所需版本信息以下配置是安装在笔者电脑上的环境。 &gt;A.支持基本语法和算法的环境： systemml version == 1.2.0 + 任意python3.5+或2.7+ B.支持深度学习算法的环境： A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错） C.支持GPU运行的环境： A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5) (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持) 以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。]]></content>
   </entry>
   <entry>
-    <title><![CDATA[基于spark的分布式机器学习平台：systemML（一）：简介]]></title>
+    <title><![CDATA[基于spark的分布式机器学习平台--systemML（一）：简介]]></title>
     <url>%2F2019%2F02%2F13%2F%E5%9F%BA%E4%BA%8Espark%E7%9A%84%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%B9%B3%E5%8F%B0%EF%BC%9AsystemML%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E7%AE%80%E4%BB%8B%2F</url>
     <content type="text"><![CDATA[systemml系列介绍 SystemML是IBM于2015开源的项目，是一个高度支持集群的机器学习平台，现已孵化成为apache顶级项目。 由于一些原因，SystemML在机器学习和深度学习领域的使用度还远不如目前热火朝天的TensorFlow，在国内的相关文章多为介绍，而相关的技术博客更是完全没有。本系列将从systeml的基本介绍开始，从技术原理，环境配置，以及程序设计等方面对systeml做比较详细的剖析。 由于本人水平有限，难免出现理解上的偏差和描述上的不当之处，欢迎斧正。 Systemml与TensorflowTensorFlow的流行：tensorflow的流行得益于近几年火热的深度学习。随着计算能力的普遍上升和并行计算以及云计算的发展，深度神经网络的复杂量级参数训练和迭代过程对于现代计算机系统来说，已经不是一个很难的问题了。 Systemml的优势：systemml结合了多种机器学习算法和机器学习算法，具有TensorFlow不具有的全面性，此外systemml的分布式集群计算能力是建立在Apache鼎鼎大名的spark生态系统中的，而spark是大数据领域最优秀的处理框架之一。 Systemml的劣势：TensorFlow作为深度学习领域的专精专家，比之于systemml优势较大。systemml在国内几乎无中文社区，这也在一个方面限制了systemml的发展速度，因为一个开源项目决定其发展速度的很大一方面即是其使用者和开发者的数量级。]]></content>
   </entry>
@@ -18,22 +18,22 @@
   <entry>
     <title><![CDATA[2018-12-28]]></title>
     <url>%2F2018%2F12%2F28%2F2018-12-28%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX19QPTVOxWhFIoo4TDPZyq27bAkukQiZ110OXREJE7NiGZGTehrmxqe9E7e31xmkai3oiWvgjwgbsx8I/bSN2QcN4l3IqYop7cbnn1S/hhIJPWqkMhy5EunvoZikRZGecF8waSu1DFKmb9xueJhxlewaAqJVEb63y1YIIXMIf1dMoD7fRKfaiqyDwiIWPVUSlvbubD24VZWEqrWgDGm74qZYsnRYHjPfD+EKhbz/uuLqqAqDlpOSsjjepDy3wlsSKFvGn/6+hfwwEmqh2fjWt+8fCVSuQ1zoRg0skpVswGFTIv77nq5FMq+nJTk6FZ3Nif8cRYz1BVLKPaNh87CdnHnFlyt7cMEufcILBbGBUdB+6otXJ9Li1C+VIXGeq2QuU4YVJdeRRDBoCRVCfcuFgShTb3Ddw1rqZoJIFKDtoAycyCcg3WUh7blWdjoSZqWnNemQ1FEdHkv3yxUiVoXzaFqgdki29KVst1S1Zbx7LcakNuW+AQ/wncFgDtAQ2h8BNoP5yyjfKwbJ1iUomBO2gm2TlqUJg3b0JWaT0D62Rxy8w4Hv/luxkdN45XVnVfSp4ATE7JlcOdJ3G8lh/9G1Vp83yjWMAfH2m6rOTVl/4gNGG08umEH89SUiteiGpfviPVIeA02goPo06Pqxabbm6NasivewXlS+pyPnN2H+EUcsoKNksKmKsqaF]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX19eNmV+1LESOgwXBoYx4cBBHZ7z0cm3AghwkuxatTS//2FviI3qvb6Ulkgh1bAD4+AhS6QMSIHFqyq5/ZQKCohrwNScAubAg1ct08sgf4KJjw6qx27Vl6SqwGWv+aKE6mRqAWvdon3FTR+/rq1ppn8BsNJyevYn2cgvmoq47BNk7o/xXzp1xSCL8+7oz6cd929Zwl7Zl9Qy/ZBFO2rcWrKQSDdMqlhe44ph9/hv76bhHB0JS8m2CKDCkApY3sgfnYsilLYcibufnvnzgfvJXuXaF+5ugArUGYoMObDR2/KAjcR66cNIs7BwlVlPXXk4q39POUxgXveFwXhMDyNINMdFGXSezUYHmbwRdwEL55ODE+fS0OblNu/PMg/bRUUrSMbuts+gfvKSuelrQFqqFYVlyHvEZoyjk959IvXJkmSdvp+PBKeYZbNCEYenTJm2sIXB+UIdYiiql4345zeRKDNmxoWBPL/17wbe1ZirSQnc24kQO2FrVhRIF27bFaUtX6++0WQBND2sKo054fjC+m4wM+eFs+uabrbV148W2G1lgPSrp+/3FVL/L+zg/t+1cLQI3dczeZv/y4XOFv9YE/vnpBAiWH6xF71fVvQ5b79eQXU9NTfiLqnwg1URrSs2GeS+1efaQSK2EczqlNfQsfebM2LWRKR5lI3Dtz33xQ8ygWOkGBI9vXyE]]></content>
   </entry>
   <entry>
     <title><![CDATA[2018-12-27]]></title>
     <url>%2F2018%2F12%2F28%2F2018-12-27%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1/Im0ZwocqtgOcjYuwbHHLjUKBD5jC6N14OJfOFJSMmA/HTQaBtSOykxlfCYIizQwt87qzXVseCUu+2NaGvsqAy2ipJXbTie4UGqasglWsKEhJBrOK75iTEZyA8BZumCgp16eRXPD/0TsAzcuMiPjcJu/hhujo7Up+qJysytWFZh6Ey9bjfkZpZIJ1vi5wLQDON8N6A0IWZ9dHHVYlxuDk+QNwgfxciw1XuXXsBEd/RRBDgfKdGFxIvxb8Tw2qByzHmdtvmeLd+M4+hQc/NO9TLRFp1BUZF8sW6eFWdU1wJXm3aYC08I5cKgF3lZNQ17ZrnXMEFAyraDLTMzAIxnksx81WaUMbJYfE45nf9td9CvlmVESdPkqs2gnvkwhnPybWJ9NwzMHt4iDf/hcjNsV1Hk9HgfPncpSA=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1/CmdoCTDo95HFQ2paH17m9iU2ekBMlTFRX2pqVDSa7UE5x+au2R9ifGG3Llgop0zRzBA4InkwsvVnmDFx7muEsxujuMz/uwwDecSEMlzhwUefUZ6dH4LYEPhnb3Zv7gOjmYEWf814xuBiN8vkJmyyGEQbO1FBNyisyZSqsUPLhoRYxiBW9WbbSoffJMA94ldHOmDKuI9EzgA21iYWvZnI38LLlIlGf6qwmUQXYht9hq5JUTAACUgUoqyH+cutX3y1WUG3xwuWak8vvLf4STh3x18JpJ+zcf7M8HChHXx5IDI1uSWcpqe486/W+OXMGdBONzKXsLSm7OFJV6viHla50yRIxQmcEEh9uyP+xnSFZlg3Q7N6t6RmHQ3IF1SkhncEplBDNiOhuMwfjIe8Let4oVedp2FhXpX0=]]></content>
   </entry>
   <entry>
     <title><![CDATA[2018-12-26]]></title>
     <url>%2F2018%2F12%2F28%2F2018-12-26%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+QX6VcXqFpxMQnGhqhII1zgdU7uyM19mWoP7qg5Mo6GSDCzCtPDl+biiJ69510gHXJj/7yysnnx3QXQrvdAZReMMYNFz0bvKUbIM66055Pnwe5i7ETiAKKAAQtSZLT8Jrk35zxfVeWYIqF1wqDZtSg+Tck9hFjYVurQE1KWT9Dl5OhEwcqp0bBe78MTRxy1ymc2eo+v8nnLqYslQG4awF4EnCj7qJPyE9MW2dSzdluiTT+j7mW/uB2DaLw0ev7RDb6YXii8lDqdSjDXy8AZejv2cCF8RgSS9kLC0cFRwvd3l/ponc8O2F4oe4J5LA5V1QQL2MqNY0sZyFu37shS0X7iB1G41wQv6TvsdGscJ7MJ6Xp6iszPmc1SJ7gzoW/nHfRFJ4dQTV7PZZQlzY0rq+3OThtajoiFgD62JpNUSIM6BGvOzCfiDoS/pFepISBclmHVbhy0b8eIwqqCRNzS3CHFkn4tjbMzsg=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX18xohK+qcNlTB6Rd1f8K3Bifif7AmSuhJ6IlwehAG95P5VqTX8y7Cjiur9S/9eY4/VT0QiSEFwr0+8eX+SPVmHPv0XqyURLtPUr33bHtbop163aloa58aNZUNufNPlor7AJGht2yyHwnfgCndoKAJLnyXf8iJukkau9mKi0bWERijuDWLARvbzkKQTDpXgIxcGLstBv5o7LbGpX3F+/TtuJGMwl2/MH6vlp9yBvbiJIkt/l2YdF6KuEGj9kuwOdNudLoZ4rVdhGOw5sRRS/fGi3I3K6+96e3TAm1/FPBT3BNn+4aioHz1NAmXqu5bKYkc9wdJYyyf0qSiynZtNAGLpTU5laZsWBoXFfQj7aSC91L6RDCSi/3SlSp2fMKScwztYl3dox5h+wqMdRVnZLxap15Km9CEFUtWBuULv5+IMJ/q/I8NKYDcZcWrn+kkldJgKH+r1WBrW8z0HP4aesG832f7+nPV6Bbaw=]]></content>
   </entry>
   <entry>
     <title><![CDATA[万历十五年阅读笔记]]></title>
     <url>%2F2018%2F12%2F27%2F%E4%B8%87%E5%8E%86%E5%8D%81%E4%BA%94%E5%B9%B4%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+d7U3wQSotgG93eGdGK3KzkssgjSvBcOwplE6jZDfLO5hpuV545wEZcT0NCs8wEGAcCsymxx5nUioEYXBppVXmSty1tHBPVAQP2hqZDV68e59a4xaiXU9JecFBwMD8FbSTFKuJRYWJ4CPTWTAR2ZhMkC/F+nPFo8FGncrYuxxF7S+lQD/FzlPlZTl8UAVAsRy+k1H19Df/xboio/84qt3zx39gRZJoX4GycLEhVS3xSVoqAdSXUg51uta6ecXNRwCZHwxdXvkh9dzS0SV6w01JNNvvhmTq93c=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1/CQM2aaD6w1YQaO84i9SPz21PadNzoOLPdV69TGBfLR1k1zxUCEftoJ7LHjvQuNFH4cJ76eEchS9+qUEc97hJxs2wEc++F+BH9gMNBiPZapWyWKPeUW3SsaCHoD/VQUUWA06wMymEcgqMYFBw2IHnAlsZeToLadKg1pwgIl3am97imFAiEWa0Ov/MuXquA93ATpiY/oq1r47oNf1tqrINvAtcf+c4LCdPW3MnDusOnzDJZWtDXxl2G7qQw8NucxZsNjO3KDnS7AbSpiTOgDVvRw3ROZusEC14=]]></content>
       <tags>
         <tag>hide</tag>
       </tags>
@@ -46,11 +46,11 @@
   <entry>
     <title><![CDATA[2018-12-25]]></title>
     <url>%2F2018%2F12%2F24%2F2018-12-25%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+0WpZCyDriTco4uNuoSC5FPhUCm3uFTauSkrYLLLE58sN59Gf9dwzimlioLClo8Muxxgo/nF3sx3VpazIWnNrTICERyWFgGsD3HWBY17xMtMTobRorh8mm5itcDSZwyVvf0p9Ao8+JQ12p/ytS/UPUeas5dCg8+iMrkW7T/IH2tSWxVZgSunFJdAmmJzKksk1Mq/rbqz28vFqqsrVoUea2ifnqvNk7f8QPk4eO7boe6VaOTkERFY+YCiXWmozJlid5qR2K46Ub6NoYTn18nB5pIaKKmhcLtNFI4ZGOtQ0YcCsCZmhBFm8wGkuJcOqukMnXYJ9ecFIQkmlurlksY6ciBhxgTD8X5wfLN2WGwb88F/emPDl5X5iZxTmM+ydQBLy6GH2+fPcKVgAylQPk+n1qBhUoUfHYMVBg7GB3hnvcx6DkFhs/epsjkP2J7H0DbLTbcPeLVZ1XM3wLV6oPjfmjUTDFr7a4ktA=]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX1+9fl0HtF+XswnVlfnF7Le39K9MoqYZ228bd1gJ/VCuhCwapXusLcFrIFH/GmfRWeyhk9YHrEaCKSEUKJP8JuK+EijrijBm8ZOEKXHK5d6H0KwnqDrVEvzaoX7izTGIBf36WIJoskjS9qcBdbkPPcTFaimH0jl1gRr18R/b3OFcOnFq5h4UVrKcW91zqfEp+pE5pTQZYweyC6uoPVBjGPnuiEeSIVD3DSn2qVI8b+8tKN/4F5Mpm2d5jZTII7gISQyxbcXqsDaBXorz/MdwkSnslLGjaZYlEfyz+obXXh7vFeL2WFBxTwOAqhvENrukd8BaCbaTml2zZI5fSueRtfHwilaKq0nDo3jgBKKPfDLV5vqjy+lueAT5Z7sREOh/Hf8Hm6s4o7qXTjo3iyMRiO48AppAXT5MYJTNxqB6ahssr/4l54BOeeT9+E+CejjNcjAoMCt6KDk5fFhupH9Joa1GG2/fl0qzoxY=]]></content>
   </entry>
   <entry>
     <title><![CDATA[2018-12-24]]></title>
     <url>%2F2018%2F12%2F24%2F2018-12-24%2F</url>
-    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX18+EaA/Rs4tWUWAEkyQI0RldBYn/5Pg6HLQgEeTqDYycEt9BjUr6rdpNdEGAAVCeT7b3CaO4MHlpqB8d6usTLOU4xWX8kgmzIinCNhELke5Zbva7IcgoGeIJowEbd59HZMDy1LA3+mWKKUAltDnXUXCjMAWPdAbT6ngireB90bTZ2ivNyy7DIVw/hab9PY09Q5TVrigvqW0Np++5rAlYVaQSSzzWc158DRYfe3MfFiS5w52dmwerZAXwz020DbRbFQK5LFsswN604RbQpXnfgqNo5mgS7Nob8fbizsBy3XHrAP5rQkvlG2ygdrv2nTuOuK3vtL5DOTGlktX+n79rgUfobQlYUYSehanwDYjlLJlUsVDwxTp4sz2]]></content>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! U2FsdGVkX19b0Yqjsam3h7r+EPAySgGfIPR+Hg5401kHXetZ8uvKhlAnWD9dvwIvDZGE6dp6Oq4szSigCxN6C1kec8BjYbyTtOj2Usq+CFlFTmu1e3DBu6wQvNvYcmrZwg4dP4RRDoUJUCwM8zXLJIiYLedn6vruBZa0dGwoftbib3RJQc7I8tUfHX+P/90Otlm6J51+spEq/ddcOCsg7+hhvMAFuDBUYgOeJWrr9+LV73j/NQg49irfeSj1y65qe/RKbwwsxTWCX5bMk4wJKfDWfdmf34/GzK6ae7Z+SZGUo27Jl2/sqiq70pUWjYHLr0uX1ursEjgv7lS/WdgbSe+c+smA+47apYtiiy8M2T3f9k0/A81Gy840lmKLiUvS]]></content>
   </entry>
 </search>
