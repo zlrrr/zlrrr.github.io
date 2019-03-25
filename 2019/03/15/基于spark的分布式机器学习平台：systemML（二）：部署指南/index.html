@@ -86,10 +86,12 @@
 <meta property="og:site_name" content="ZLR&#39;s Blog">
 <meta property="og:description" content="Systemml安装指南（基于pyspark编程）systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-25T15:12:39.899Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/reference.png">
+<meta property="og:updated_time" content="2019-03-25T16:02:30.909Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于spark的分布式机器学习平台--systemML（二）：安装部署">
 <meta name="twitter:description" content="Systemml安装指南（基于pyspark编程）systemml官方信息systemml[项目官网]: (http://systemml.apache.org/)systemml[官方文档]: (http://systemml.apache.org/)systemml[github]: (https://github.com/apache/systemml)">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/reference.png">
 
 
 
@@ -359,6 +361,8 @@
 <a id="more"></a>
 <h4 id="环境配置和成功安装所需版本信息"><a href="#环境配置和成功安装所需版本信息" class="headerlink" title="环境配置和成功安装所需版本信息"></a>环境配置和成功安装所需版本信息</h4><p>以下配置是安装在笔者电脑上的环境。<br>    &gt;<strong>A.支持基本语法和算法的环境：</strong><br>    Java version == 1.8.0_161  +  Spark version == 2.4.0  +  systemml version == 1.2.0  +  任意python3.5+或2.7+<br>    <strong>B.支持深度学习算法的环境：</strong><br>    A + python version == 2.7.15（尽管systemml官方网站给出的python版本信息是3.5+和2.7+均可，然而经过实验，python3对于systemml的深度学习模块并不支持，比如Caffe2DML等模块在import时会报错）<br>    <strong>C.支持GPU运行的环境：</strong><br>    A + B + CUDA (version == 9.0) + cuDnn (version == 7.0.5)<br>    (CUDA和cudnn前两位的版本号很重要，必须相同，目前对新版本,即CUAD &gt;= 9.1和cudnn &gt;= 7.1均不支持)</p>
 <p>以上配置均部署于win10环境下，相对来说，在linux下进行的环境部署会较为简单，但笔者并未尝试。</p>
+<p>在4天前，官方更新了Q&amp;A，并给出了详细了对应JCuda，CUDA，CuDNN版本，如下图所示，仅供参考：</p>
+<p><img src="/2019/03/15/基于spark的分布式机器学习平台：systemML（二）：部署指南/reference.png" alt="reference"></p>
 
       
     </div>
